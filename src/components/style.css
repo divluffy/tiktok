@@ -1,0 +1,394 @@
+.wrapper_nav {
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.bowl_search {
+  display: flex;
+  background: rgb(230, 230, 230);
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  border-radius: 50px;
+}
+
+.input_search {
+  width: calc(100% - 45px);
+  height: 100%;
+}
+
+.input_search input {
+  padding-left: 13px;
+  font-size: 1.1rem;
+}
+
+.svg_Search {
+  height: 30px;
+  border-left: 1px solid rgb(153, 153, 153);
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bowl_tool {
+  display: flex;
+  align-items: center;
+}
+
+.bowl_tool > div {
+  margin-left: 22px;
+  cursor: pointer;
+}
+
+.bowl_tool svg {
+  width: 30px;
+  height: 30px;
+}
+
+.avatar_user_nav {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.line_nav {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+.line_nav:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.title_nav_section {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 8px;
+  color: rgb(26, 26, 26);
+}
+
+.line_nav svg {
+  fill: rgb(26, 26, 26);
+}
+
+.line_nav.active .title_nav_section {
+  color: var(--red);
+}
+
+.line_nav.active svg {
+  fill: var(--red);
+}
+
+.hr_line_bet {
+  margin: 15px 0;
+  background-color: rgb(212, 212, 212);
+}
+
+.title_head_nav {
+  color: rgb(90, 90, 90);
+}
+
+.bowl_user_random {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 3px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.bowl_user_random:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.img_Avatar_random {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.titles_card_Random {
+  margin-left: 9px;
+  line-height: 27px;
+}
+
+.username_title_nav {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.fullname_title_nav {
+  font-size: 0.9rem;
+}
+
+.title_head_nav_seeall {
+  font-size: 0.8rem;
+  color: var(--red);
+  margin-top: 10px;
+  padding: 3px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.title_head_nav_seeall:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+/* bowl_post */
+
+.bowl_post {
+  /* background-color: tomato; */
+  display: flex;
+  width: 500px;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.center_post {
+  /* background: violet; */
+  width: 70%;
+}
+
+.avatar_post {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.line_names_post {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.username_post {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.faullname_post {
+  font-size: 1rem;
+  margin-left: 15px;
+}
+
+.btn_follow_user {
+  background: transparent;
+  position: absolute;
+  right: -60px;
+  border-radius: 7px;
+  width: 80px;
+  height: 30px;
+  border: 2px solid #fe2c55;
+}
+
+.btn_follow_user:hover {
+  background: #fe2c561a;
+}
+
+.btn_follow_user button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fe2c55;
+}
+
+.bowl_description {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.bowl_video {
+  width: 100%;
+  position: relative;
+  min-height: 500px;
+}
+
+.bowl_video video {
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bar_video {
+  position: absolute;
+  align-items: center;
+  bottom: 7px;
+  width: 100%;
+  height: 60px;
+  left: 0;
+  display: none;
+  padding: 0 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.637), #0000);
+  justify-content: space-between;
+}
+
+.bowl_video:hover .bar_video {
+  display: flex;
+}
+.btn_playpuase_Vid {
+  cursor: pointer;
+}
+
+.bowl_Reacted {
+  /* background: chartreuse; */
+  width: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.bowl_svg_btn_reactyion {
+  background: rgb(235, 235, 235);
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bowl_svg_btn_reactyion svg {
+  fill: rgb(39, 39, 39);
+}
+
+.bowl_svg_btn_reactyion.love svg {
+  fill: #fe2c55;
+}
+
+.cardy_reacty {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.count_activited {
+  margin-top: 3px;
+}
+
+
+.link_none{
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+.bowl_proifle{
+  width: 70%;
+  height: 100%;
+}
+
+
+
+
+.head_profile{
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+}
+.avatar_profile{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.side_info_profile{
+  margin-left: 25px;
+  width: 220px;
+}
+
+
+
+.username_profile{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+
+.btn_to_follow_prof{
+  background: var(--red);
+  height: 33px;
+}
+
+
+.btn_to_follow_prof button{
+  color: #fff;
+}
+
+
+.title_name_prof{
+  margin: 10px 0;
+}
+.analyisis{
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.title_analyas{
+  margin-left: 20px;
+}
+
+
+
+
+.bowl_bio{
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+
+
+
+
+.bowl_list_Video{
+display: grid;
+grid-template-columns: repeat(3, 1fr );
+place-items: center;
+margin-top: 10px;
+}
+
+
+.card_post_vid_link{
+  width: 90%;
+
+
+}
+.card_post_vid{
+  height: 300px;
+  margin-top: 15px;
+}
+
+
